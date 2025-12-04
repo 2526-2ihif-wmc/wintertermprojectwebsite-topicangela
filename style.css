@@ -1,9 +1,18 @@
-.custom-green{
-    background-color: rgb(162, 255, 162);
+.custom-green {
+  background-color: rgb(162, 255, 162);
 }
-.navbar .navlink {
-    color: darkgreen
+
+.navbar .nav-link {
+  color: darkgreen !important;
 }
+
 .navbar .navbar-brand {
-    color: darkgreen
+  color: darkgreen !important;
 }
+
+body {
+  /*background-image: url('img/background-leaves.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;*/}
