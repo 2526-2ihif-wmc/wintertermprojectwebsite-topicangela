@@ -10,7 +10,142 @@
   <!-- Your Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
-
+body>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Healthy Recipes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fitness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sleep & Hydration</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<h1>Welcome to your personal Weekly Recipe Planner!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Recipe Planner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .day-box {
+      min-height: 200px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      background: #f9f9f9;
+      transition: 0.3s;
+    }
+    .day-box:hover {
+      background: #e8f5e9; /* light green hover */
+      transform: scale(1.02);
+    }
+    .recipe-select {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">🍲 Weekly Recipe Planner</h1>
+    <div class="row text-center">
+      <div class="col day-box">
+        <h4>Monday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🥗 Salad Bowl</option>
+          <option>🍝 Pasta Primavera</option>
+          <option>🍲 Veggie Soup</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Tuesday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🥪 Sandwich Wrap</option>
+          <option>🍛 Curry Rice</option>
+          <option>🥦 Stir Fry</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Wednesday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🍲 Lentil Soup</option>
+          <option>🥗 Greek Salad</option>
+          <option>🍠 Baked Sweet Potato</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Thursday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🍜 Noodle Bowl</option>
+          <option>🥒 Veggie Wrap</option>
+          <option>🍳 Omelette</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Friday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🍕 Veggie Pizza</option>
+          <option>🥗 Caesar Salad</option>
+          <option>🍲 Minestrone Soup</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Saturday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🍔 Veggie Burger</option>
+          <option>🥗 Quinoa Bowl</option>
+          <option>🍝 Spaghetti</option>
+        </select>
+      </div>
+      <div class="col day-box">
+        <h4>Sunday</h4>
+        <select class="form-select recipe-select">
+          <option>Select recipe</option>
+          <option>🥞 Pancakes</option>
+          <option>🍲 Tomato Soup</option>
+          <option>🥗 Fruit Salad</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
 </body>
 </html>
