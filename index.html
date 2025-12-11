@@ -1,81 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthy living portal</title>
-  <!-- Minty Bootswatch Theme -->
+  <title>Healthy Living Portal</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/minty/bootstrap.min.css">
-  <!-- Your Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Healthy Recipes</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Fitness</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sleep & Hydration</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<h1>Welcome to your personal Weekly Recipe Planner!</h1>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Weekly Recipe Planner</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .day-box {
-      min-height: 200px;
-      border: 2px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      background: #f9f9f9;
-      transition: 0.3s;
-    }
-    .day-box:hover {
-      background: #e8f5e9; /* light green hover */
-      transform: scale(1.02);
-    }
-    .recipe-select {
-      margin-top: 10px;
-    }
-  </style>
-</head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Healthy Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Fitness</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sleep & Hydration</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <h1>Welcome to your personal Weekly Recipe Planner!</h1>
+
+  <!-- Inputs for user data -->
+  <label>Age: <input id="age" type="number"></label>
+  <label>Weight (kg): <input id="weight" type="number"></label>
+  <label>Height (cm): <input id="height" type="number"></label>
+  <label>Gender:
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </label>
+  <button id="calcBtn">Calculate Calories</button>
+
+  <p id="result"></p>
+
+  <!-- Recipe selector -->
+  <h2>Select a recipe:</h2>
+  <select id="recipeSelect">
+    <option value="">--Choose--</option>
+    <option value="salad">🥗 Salad Bowl</option>
+    <option value="pasta">🍝 Pasta Primavera</option>
+    <option value="curry">🍛 Curry Rice</option>
+  </select>
+
+  <p id="recipeInfo"></p>
+
+  <!-- Link external JS -->
+  <script src="script.js" defer></script>
+
+
+</head>
   <div class="container mt-5">
     <h1 class="text-center mb-4">🍲 Weekly Recipe Planner</h1>
     
@@ -249,7 +232,7 @@
 
             <h1>Quinoa Bowl</h1>
 <p>A quinoa bowl is a wholesome dish featuring fluffy quinoa topped with colorful vegetables, proteins, and flavorful dressings</p>     
- <img src="img/quinoa.jpeg" alt="hquinoa-bowl">    <div class="row text-center">
+ <img src="img/quinoa.jpeg" alt="quinoa-bowl">    <div class="row text-center">
       <h2>Ingredients:</h2>
 <li>1 cup cooked quinoa</li>
 <li>1 cup veggies of choice</li>
@@ -265,21 +248,138 @@
       </ol>
 
                   <h1>Mixed berry muffins</h1>
-<p>A quinoa bowl is a wholesome dish featuring fluffy quinoa topped with colorful vegetables, proteins, and flavorful dressings</p>     
- <img src="img/quinoa.jpeg" alt="hquinoa-bowl">    <div class="row text-center">
+<p>Mixed berry muffins are soft, golden treats bursting with juicy berries, offering a sweet and tangy flavor in every bite</p>     
+ <img src="img/muffins.jpg" alt="berries-muffins">    <div class="row text-center">
       <h2>Ingredients:</h2>
-<li>1 cup cooked quinoa</li>
-<li>1 cup veggies of choice</li>
-<li>1/2 cup protein of choice</li>
-<li>1/4 – 1/2 cup healthy fat (avocado, nuts, seeds, etc.)</li>
-<li>Dressing or sauce of choice</li>
+<li>2 large eggs, room temperature</li>
+<li>1 cup granulated sugar</li>
+<li>1 cup Greek yogurt (or sour cream)</li>
+<li>1/2 cup extra light olive oil (not extra virgin)</li>
+<li>1 teaspoon vanilla extract</li>
+<li>1/4 teaspoon sea salt</li>
+<li>2 cups all-purpose flour</li>
+<li>2 teaspoons baking powder</li>
+<li>1/2 cup strawberries, hulled and diced</li>
+<li>1/2 cup raspberries</li>
+<li>1/2 cup blueberries</li>
       </ul>
       <h2>Instructions:</h2>
       <ol>
-         <li>Add 1 cup cooked quinoa to a bowl.</li>
-<li>Top with chosen veggies, protein, and healthy fat.</li>
-<li>Finish with dressing or sauce.</li>
+<li>Line a 12-count muffin tin with cupcake liners and preheat oven to 400°F (200°C).</li>
+<li>In a large mixing bowl, beat 2 eggs with 1 cup sugar on high speed for 5 minutes until thick and light in color.</li>
+<li>Add Greek yogurt, olive oil, and vanilla. Mix on low speed until just combined.</li>
+<li>In a separate bowl, whisk together flour, baking powder, and salt.</li>
+<li>Add flour mixture into the batter in thirds, stirring gently each time. Do not overmix.</li>
+<li>Fold in strawberries, raspberries, and blueberries with a spatula until just combined.</li>
+<li>Divide batter evenly into muffin cups, filling to the top.</li>
+<li>Bake in the center of the oven for 20–22 minutes, until tops are golden and a toothpick comes out clean.</li>
+<li>Transfer muffins to a wire rack to cool. Serve warm or at room temperature.</li>
       </ol>
+
+       <h1>Chocolate milk</h1>
+<p>Chocolate milk is a creamy, sweet drink made by blending milk with cocoa and sugar for a rich flavor</p>     
+ <img src="img/Healthy-Chocolate-Milk-_-scaled.jpg" alt="chocolate-milk">    <div class="row text-center">
+      <h2>Ingredients:</h2>
+<li>2 cups preferred milk (organic soy milk recommended, but any milk works)</li>
+<li>4 pitted Medjool dates (soaked if dry)</li>
+<li>2 tablespoons cocoa powder</li>
+<li>1 tablespoon almond butter (or tahini/omit if nut-free)</li>
+      </ul>
+      <h2>Instructions:</h2>
+      <ol>
+<li>Place all ingredients in a blender.</li>
+<li>Blend until smooth and creamy.</li>
+<li>Taste and adjust sweetness by adding more dates or maple syrup if desired.</li>
+<li>If dates are dry, soak them in hot water for 10 minutes before blending.</li>
+<li>Serve chilled. Store sealed in the refrigerator for up to 1 week.</li>
+      </ol>
+<h1>Stir Fry</h1>
+<p>Stir fry is a quick, flavorful dish made by cooking bite-sized ingredients over high heat with minimal oil</p>     
+ <img src="img/stirfry.jpeg" alt="stir-fry">    <div class="row text-center">
+      <h2>Ingredients:</h2>
+<li>1 lb chicken thighs, cut into bite-sized pieces</li>
+<li>1/2 zucchini, sliced or cubed</li>
+<li>2 tablespoons oil, divided</li>
+<li>1 tablespoon unsalted butter</li>
+<li>1 cup broccoli florets</li>
+<li>1 small carrot, julienned or cubed</li>
+<li>8 oz mushrooms, sliced</li>
+<li>1/2 red pepper, cubed</li>
+<li>1/2 onion, cubed</li>
+<li>4 garlic cloves, minced</li>
+<li>1 teaspoon fresh ginger, minced</li>
+<li>1/2 cup cashews</li>
+      </ul>
+      <h2>Instructions:</h2>
+      <ol>
+<li>Trim chicken thighs of excess fat and cut into bite-sized pieces.</li>
+<li>Cut vegetables into even-sized pieces.</li>
+<li>Combine all sauce ingredients in a bowl and set aside.</li>
+<li>Heat 1 tablespoon oil in a large pan or wok over medium-high heat.</li>
+<li>Add chicken in a single layer, cook until browned and cooked through, then remove from pan.</li>
+<li>Add remaining oil and butter to the pan, then add broccoli, zucchini, mushrooms, red pepper, onion, and carrots. Cook until crisp-tender.</li>
+<li>Return chicken to the pan. Add garlic and ginger, cook for 1 minute, stirring frequently.</li>
+<li>Add cashews, then pour in the sauce. Bring to a boil, then reduce heat and simmer until sauce thickens and coats the chicken and vegetables.</li>
+<li>Garnish with green onion and sesame seeds if desired. Serve hot over rice or noodles.</li>    
+<h1>Curry rice</h1>
+<p>Curry rice is a fragrant dish where rice is cooked with spices like curry powder, ginger, and paprika, often combined with vegetables for a warm, flavorful meal</p>     
+ <img src="img/curry.jpeg" alt="curry">    <div class="row text-center">
+      <h2>Ingredients:</h2>
+      <ul>
+        <li>1 tablespoon olive oil</li>
+<li>1 onion, peeled and finely chopped</li>
+<li>2 garlic cloves, peeled and finely chopped</li>
+<li>3/4 teaspoon salt</li>
+<li>3/4 teaspoon cayenne pepper</li>
+<li>1/4 teaspoon paprika</li>
+<li>1/2 teaspoon ground ginger</li>
+<li>2 teaspoons curry powder</li>
+<li>1 1/2 cups frozen peas</li>
+<li>2 carrots, grated</li>
+<li>1 cup long-grain rice</li>
+<li>2 cups vegetable stock (or broth)</li>
+      </ul>
+      <h2>Instructions:</h2>
+      <ol>
+<li>Peel and finely chop the onion and garlic.</li>
+<li>Heat olive oil in a large pan over medium heat.</li>
+<li>Add onion, garlic, salt, cayenne pepper, paprika, ginger, and curry powder. Mix well and cook for 3–4 minutes.</li>
+<li>Grate the carrots and add them to the pan along with frozen peas. Stir and cook for another 2–3 minutes.</li>
+<li>Add rice and pour in vegetable stock. Mix well again.</li>
+<li>Cover the pan and cook for 15 minutes over medium-low heat.</li>
+<li>When done, transfer to serving plates.</li>
+<li>Optionally top with finely chopped cashews or cilantro and garnish with lime wedges.</li>
+<li>Serve warm and enjoy!</li>
+
+<h1>Greek salad</h1>
+<p>Greek salad is a refreshing Mediterranean dish made with crisp cucumbers, juicy tomatoes, red onions, olives, and feta cheese, dressed simply with olive oil and oregano.</p>     
+ <img src="img/greeksalad.jpeg" alt="greek.salad">    <div class="row text-center">
+      <h2>Ingredients:</h2>
+      <ul>
+<li>1 tablespoon olive oil</li>
+<li>1 onion, peeled and finely chopped</li>
+<li>2 garlic cloves, peeled and finely chopped</li>
+<li>3/4 teaspoon salt</li>
+<li>3/4 teaspoon cayenne pepper</li>
+<li>1/4 teaspoon paprika</li>
+<li>1/2 teaspoon ground ginger</li>
+<li>2 teaspoons curry powder</li>
+<li>1 1/2 cups frozen peas</li>
+<li>2 carrots, grated</li>
+<li>1 cup long-grain rice</li>
+<li>2 cups vegetable stock (or broth)</li>
+      </ul>
+      <h2>Instructions:</h2>
+      <ol>
+<li>Peel and finely chop the onion and garlic.</li>
+<li>Heat olive oil in a large pan over medium heat.</li>
+<li>Add onion, garlic, salt, cayenne pepper, paprika, ginger, and curry powder. Mix well and cook for 3–4 minutes.</li>
+<li>Grate the carrots and add them to the pan along with frozen peas. Stir and cook for another 2–3 minutes.</li>
+<li>Add rice and pour in vegetable stock. Mix well again.</li>
+<li>Cover the pan and cook for 15 minutes over medium-low heat.</li>
+<li>When done, transfer to serving plates.</li>
+<li>Optionally top with finely chopped cashews or cilantro and garnish with lime wedges.</li>
+<li>Serve warm and enjoy!</li>
         <div class="col day-box">
         <h4>Monday</h4>
         <select class="form-select recipe-select">
@@ -345,7 +445,5 @@
       </div>
     </div>
   </div>
-</body>
-</html>
 </body>
 </html>
