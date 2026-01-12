@@ -14,25 +14,24 @@
 </head>
 
 <body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Healthy Recipes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Healthy Recipes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#planner">Weekly Planner</a></li>
-          <li class="nav-item"><a class="nav-link" href="#calculator">Calorie Calculator</a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planner">Weekly Planner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#calculator">Calorie Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes & Tips</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- HOME SECTION -->
   <section id="home" class="container mt-4">
@@ -82,7 +81,7 @@
       <!-- Monday -->
       <div class="col day-box">
         <h4>Monday</h4>
-        <select class="form-select recipe-select" data-day="Monday">
+        <select class="form-select recipe-select">Monday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -106,13 +105,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Tuesday -->
       <div class="col day-box">
         <h4>Tuesday</h4>
-        <select class="form-select recipe-select" data-day="Tuesday">
+        <select class="form-select recipe-select">Tuesday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -136,13 +135,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Wednesday -->
       <div class="col day-box">
         <h4>Wednesday</h4>
-        <select class="form-select recipe-select" data-day="Wednesday">
+        <select class="form-select recipe-select">Wednesday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -166,13 +165,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Thursday -->
       <div class="col day-box">
         <h4>Thursday</h4>
-        <select class="form-select recipe-select" data-day="Thursday">
+        <select class="form-select recipe-select">Thursday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -196,13 +195,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Friday -->
       <div class="col day-box">
         <h4>Friday</h4>
-        <select class="form-select recipe-select" data-day="Friday">
+        <select class="form-select recipe-select">Friday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -226,13 +225,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Saturday -->
       <div class="col day-box">
         <h4>Saturday</h4>
-        <select class="form-select recipe-select" data-day="Saturday">
+        <select class="form-select recipe-select">Saturday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -256,13 +255,13 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
       <!-- Sunday -->
       <div class="col day-box">
         <h4>Sunday</h4>
-        <select class="form-select recipe-select" data-day="Sunday">
+        <select class="form-select recipe-select">Sunday">
           <option value="">Select recipe</option>
           <option value="Chicken Salad Bowl">Chicken Salad Bowl</option>
           <option value="Pasta Primavera">Pasta Primavera</option>
@@ -286,7 +285,7 @@
           <option value="Tomato Soup">Tomato Soup</option>
           <option value="Fruit Salad">Fruit Salad</option>
         </select>
-        <p class="day-total fw-bold"></p>
+
       </div>
 
     </div>
@@ -716,6 +715,10 @@
 
     </div>
   </section>
+
+  <footer class="text-center p-3 mt-5 bg-light">
+    <p>Healthy Living Portal — Created by Angela</p>
+  </footer>
 
   <script>
     function calcBMR(age, weight, height, gender) {
