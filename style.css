@@ -45,4 +45,9 @@ body {
 .tips-sidebar a:hover {
   color: #0b3d25;
   transform: translateX(3px);
+  text-shadow: 0 0 5px rgba(27, 94, 50, 0.3);
+}
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
