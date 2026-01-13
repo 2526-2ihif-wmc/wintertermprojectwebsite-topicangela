@@ -25,3 +25,24 @@
 body {
   background: linear-gradient(to bottom, #e8ffe8, #ffffff);
 }
+.tips-sidebar {
+  background: #f6fff6;
+  border: 1px solid #cceccc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  position: sticky;
+  top: 80px;
+}
+
+.tips-sidebar a {
+  text-decoration: none;
+  color: #176b3f;
+  display: block;
+  padding: 6px 0;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.tips-sidebar a:hover {
+  color: #0b3d25;
+  transform: translateX(3px);
+}
