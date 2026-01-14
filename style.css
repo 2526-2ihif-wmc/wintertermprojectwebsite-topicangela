@@ -68,7 +68,6 @@ body {
 
 
 /* hydration html */
-
 .water-tracker .cup {
   width: 50px;
   height: 70px;
@@ -85,3 +84,26 @@ body {
 .water-tracker .cup:hover {
   transform: scale(1.08);
 }
+.intake-box {
+  background-color: #e8fff1;
+  border-left: 5px solid #78C2AD;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.intake-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.intake-box li::before {
+  content: "💧 ";
+}
+.food-card {
+  background-color: #ffffff;
+  border: 2px solid #78C2AD;
+  transition: transform 0.2s ease;
+  font-size: 1.2rem;
+}
+.food-card:hover {
+  transform: scale(1.05);
+}
+
