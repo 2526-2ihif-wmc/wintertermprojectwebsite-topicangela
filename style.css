@@ -65,3 +65,23 @@ body {
   padding: 10px 0;
   color: #176b3f;
 }
+
+
+/* hydration html */
+
+.water-tracker .cup {
+  width: 50px;
+  height: 70px;
+  border: 2px solid #a3d9ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  background-color: #ffffff;
+}
+.water-tracker .cup.filled {
+  background-color: #a3d9ff;
+}
+
+.water-tracker .cup:hover {
+  transform: scale(1.08);
+}
