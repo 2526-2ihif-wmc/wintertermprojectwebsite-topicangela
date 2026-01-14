@@ -1,3 +1,6 @@
+html{
+  background-color: #78C2AD;
+}
 .custom-green {
   background-color: rgb(162, 255, 162);
 }
@@ -23,7 +26,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #e8ffe8, #ffffff);
+  background: linear-gradient(to bottom, #e8ffe8 0%, #ffffff 50%, #e8ffe8 100%);
 }
 .tips-sidebar {
   background: #f6fff6;
@@ -47,7 +50,7 @@ body {
   transform: translateX(3px);
   text-shadow: 0 0 5px rgba(27, 94, 50, 0.3);
 }
-button:hover {
+.btn:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
@@ -58,7 +61,7 @@ button:hover {
 }
 .carousel-caption {
   position: static;
-  background: none;
+  background: #ffffffcc;
   padding: 10px 0;
   color: #176b3f;
 }
