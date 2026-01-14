@@ -51,3 +51,14 @@ button:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
+.carousel-img{
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.carousel-caption {
+  position: static;
+  background: none;
+  padding: 10px 0;
+  color: #176b3f;
+}
