@@ -113,6 +113,11 @@ body {
   background: #f6fff6;
   border: 1px solid #cceccc;
   border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.balanced-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .plate-grid {
@@ -131,6 +136,8 @@ body {
 
 .plate-section:hover {
   transform: scale(1.03);
+  background: #eafff3;
+  border-color: #78C2AD;
 }
 
 .meal-card {
@@ -144,6 +151,8 @@ body {
 .meal-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  background: #f0fff7;
+  border-color: #78C2AD;
 }
 
 .meal-card h4 {
