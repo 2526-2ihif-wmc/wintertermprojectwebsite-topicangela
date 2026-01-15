@@ -108,4 +108,56 @@ body {
 .food-card:hover {
   transform: scale(1.05);
 }
+/* Balanced Meals Page */
+
+.balanced-box {
+  background: #f6fff6;
+  border: 1px solid #cceccc;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+.plate-grid {
+  display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.plate-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 18px;
+  border: 1px solid #e0f2e9;
+  font-size: 0.95rem;
+}
+
+.plate-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.plate-section.veg {
+  border-left: 5px solid #4caf50;
+}
+.plate-section.protein {
+  border-left: 5px solid #ff9800;
+}
+.plate-section.carbs {
+  border-left: 5px solid #3f51b5;
+}
+.plate-section.fats {
+  border-left: 5px solid #9c27b0;
+}
+
+.meal-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #cceccc;
+  padding: 15px 18px;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
 
