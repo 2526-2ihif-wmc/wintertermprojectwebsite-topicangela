@@ -31,77 +31,113 @@
     </nav>
 
     <div class="balanced-box p-4 mb-5">
-  <h2>Why Daily Movement Matters</h2>
-  <p>Moving your body doesn’t have to mean intense workouts. Small, consistent actions boost your energy, mood, and overall health.</p>
-</div>
-
-<div class="balanced-box p-4 mb-5">
-  <h2>Easy Ways to Move Every Day</h2>
-  <p>Choose activities you enjoy — movement should feel good.</p>
-
-  <div class="row g-4 mt-3">
-
-    <div class="col-md-4">
-      <div class="move-card">
-        <div class="emoji">🚶‍♀️</div>
-        <h4>Walking</h4>
-        <p>10–20 minutes is enough to boost your mood and energy.</p>
-      </div>
+        <h2>Why Daily Movement Matters</h2>
+        <p>Moving your body doesn’t have to mean intense workouts. Small, consistent actions boost your energy, mood,
+            and overall health.</p>
     </div>
 
-    <div class="col-md-4">
-      <div class="move-card">
-        <div class="emoji">🧘‍♀️</div>
-        <h4>Stretching</h4>
-        <p>Loosen tight muscles and reduce stress with gentle stretches.</p>
-      </div>
+    <div class="balanced-box p-4 mb-5">
+        <h2>Easy Ways to Move Every Day</h2>
+        <p>Choose activities you enjoy — movement should feel good.</p>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-4">
+                <div class="move-card">
+                    <div class="emoji">🚶‍♀️</div>
+                    <h4>Walking</h4>
+                    <p>10–20 minutes is enough to boost your mood and energy.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="move-card">
+                    <div class="emoji">🧘‍♀️</div>
+                    <h4>Stretching</h4>
+                    <p>Loosen tight muscles and reduce stress with gentle stretches.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="move-card">
+                    <div class="emoji">🏋️‍♀️</div>
+                    <h4>Strength</h4>
+                    <p>Bodyweight exercises like squats or push-ups build stability.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="move-card">
-        <div class="emoji">🏋️‍♀️</div>
-        <h4>Strength</h4>
-        <p>Bodyweight exercises like squats or push-ups build stability.</p>
-      </div>
-    </div>
+    <div class="balanced-box p-4 mb-5">
+  <h2>Quick Movement Checklist</h2>
+  <p>Tap each activity when you complete it.</p>
 
+  <div class="movement-checklist">
+    <div class="move-check">🌅 Morning stretch</div>
+    <div class="move-check">🚶‍♀️ 5‑minute walk</div>
+    <div class="move-check">🧘‍♀️ 1‑minute breathing</div>
+    <div class="move-check">🏋️‍♀️ 10 squats</div>
   </div>
 </div>
 
-<div class="balanced-box p-4 mb-5">
-  <h2>Movement Ideas Throughout the Day</h2>
+    <div class="balanced-box p-4 mb-5">
+        <h2>Movement Ideas Throughout the Day</h2>
 
-  <div class="timeline">
+        <div class="timeline">
 
-    <div class="timeline-item">
-      <h4>🌅 Morning</h4>
-      <p>Light stretching or a short walk to wake up your body.</p>
+            <div class="timeline-item">
+                <h4>🌅 Morning</h4>
+                <p>Light stretching or a short walk to wake up your body.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>🌤️ Afternoon</h4>
+                <p>Stand up every hour, take the stairs, or do a quick mobility break.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>🌙 Evening</h4>
+                <p>Gentle yoga or a relaxing walk to unwind.</p>
+            </div>
+
+        </div>
     </div>
 
-    <div class="timeline-item">
-      <h4>🌤️ Afternoon</h4>
-      <p>Stand up every hour, take the stairs, or do a quick mobility break.</p>
+    <div class="balanced-box p-4 mb-5">
+        <h2>Common Movement Mistakes</h2>
+        <div class="row g-3 mt-3">
+            <div class="col-md-6">
+                <div class="mistake-card">
+                    <strong>❌ Sitting for hours</strong>
+                    <p>Take short breaks to stand, stretch, or walk.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mistake-card">
+                    <strong>❌ Doing too much at once</strong>
+                    <p>Start small — consistency matters more than intensity.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="timeline-item">
-      <h4>🌙 Evening</h4>
-      <p>Gentle yoga or a relaxing walk to unwind.</p>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-        <footer class="text-center p-3 mt-5 bg-primary text-white" data-bs-theme="dark">
+    <footer class="text-center p-3 mt-5 bg-primary text-white" data-bs-theme="dark">
         <p>Healthy Living Portal — Created by Angela</p>
         <small>“Small steps every day lead to big changes.”</small>
     </footer>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+  document.querySelectorAll('.move-check').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+    });
+  });
+</script>
 </body>
 
 </html>

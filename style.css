@@ -273,6 +273,27 @@ body {
   margin-bottom: 10px;
 }
 
+.movement-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.move-check {
+  background: #ffffff;
+  border: 2px solid #cceccc;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.move-check.checked {
+  background: #eafff3;
+  border-color: #78C2AD;
+  text-decoration: line-through;
+}
+
 .timeline {
   border-left: 4px solid #78C2AD;
   padding-left: 20px;
