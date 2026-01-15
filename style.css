@@ -252,3 +252,37 @@ body {
 }
 
 
+/* exercise html */
+.move-card {
+  background: #ffffff;
+  border: 2px solid #cceccc;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.move-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  border-color: #78C2AD;
+}
+
+.move-card .emoji {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  border-left: 4px solid #78C2AD;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.timeline-item h4 {
+  margin-bottom: 5px;
+}
