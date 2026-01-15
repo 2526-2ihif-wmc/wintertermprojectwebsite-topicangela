@@ -307,3 +307,68 @@ body {
 .timeline-item h4 {
   margin-bottom: 5px;
 }
+
+/* sleep html */
+.sleep-tracker {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.star {
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  border: 2px solid #cceccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.star.filled {
+  background: #78C2AD;
+  color: white;
+  transform: scale(1.05);
+}
+
+.simple-timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.time-block {
+  background: #ffffff;
+  border: 2px solid #cceccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 32%;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.time-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  border-color: #78C2AD;
+}
+
+.time-block .emoji {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .simple-timeline {
+    flex-direction: column;
+  }
+
+  .time-block {
+    width: 100%;
+  }
+}
