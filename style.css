@@ -110,10 +110,11 @@ body {
 }
 
 .balanced-box {
-  background: #f6fff6;
+  background: linear-gradient(to bottom right, #ffffff, #eafff3);
   border: 1px solid #cceccc;
   border-radius: 12px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-top: 30px;
 }
 .balanced-box:hover {
   transform: translateY(-4px);
@@ -163,5 +164,49 @@ body {
 .meal-card ul {
   padding-left: 18px;
   margin-bottom: 0;
+}
+.tips-sidebar:hover {
+  box-shadow: 0 10px 25px rgba(120, 194, 173, 0.4);
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+.carousel-item img {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+.carousel-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.simple-meal-card {
+  background: #ffffff;
+  border: 2px solid #cceccc;
+  border-radius: 12px;
+  padding: 18px;
+  transition: 0.25s ease;
+}
+
+.simple-meal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  border-color: #78C2AD;
+}
+
+.simple-meal-card h4 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.simple-meal-card .small-text {
+  font-size: 0.9rem;
+  color: #4a6b57;
+  margin-bottom: 10px;
+}
+
+.simple-meal-card ul {
+  padding-left: 18px;
+  margin: 0;
 }
 

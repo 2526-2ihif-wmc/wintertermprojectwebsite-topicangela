@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../recipes.html">Healthy Recipes</a>
@@ -32,7 +31,7 @@
     </nav>
 
     <section class="container mt-5 mb-5">
-        <h1 class="text-center mb-4">🥗 Balanced Meals for Everyday Energy</h1>
+        <h1 class="text-center mb-4"> Balanced Meals for Everyday Energy</h1>
 
         <div class="row">
 
@@ -63,95 +62,190 @@
                             <p>Add a small amount of nuts, seeds, avocado, or olive oil.</p>
                         </div>
                     </div>
-                    <div class="balanced-box p-4 mb-5">
-                        <h2>Build Your Own Balanced Meal</h2>
-                        <p>Mix and match ingredients to create endless healthy combinations.</p>
+                </div>
 
-                        <div class="row mt-4 g-3">
-                            <div class="col-md-4">
-                                <div class="meal-card">
-                                    <h4>Proteins</h4>
-                                    <ul>
-                                        <li>Chicken breast</li>
-                                        <li>Salmon</li>
-                                        <li>Tofu</li>
-                                        <li>Beans & lentils</li>
-                                        <li>Eggs</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="balanced-box p-4 mb-5">
+                    <h2>Build Your Own Balanced Meal</h2>
+                    <p>Mix and match ingredients to create endless healthy combinations.</p>
 
-                            <div class="col-md-4">
-                                <div class="meal-card">
-                                    <h4>Vegetables</h4>
-                                    <ul>
-                                        <li>Broccoli</li>
-                                        <li>Spinach</li>
-                                        <li>Carrots</li>
-                                        <li>Peppers</li>
-                                        <li>Zucchini</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="row g-4 mt-3">
 
-                            <div class="col-md-4">
-                                <div class="meal-card">
-                                    <h4>Whole Grains</h4>
-                                    <ul>
-                                        <li>Brown rice</li>
-                                        <li>Quinoa</li>
-                                        <li>Whole‑grain pasta</li>
-                                        <li>Oats</li>
-                                        <li>Whole‑grain bread</li>
-                                    </ul>
-                                </div>
+                        <!-- Proteins -->
+                        <div class="col-md-4">
+                            <div class="simple-meal-card">
+                                <h4>Proteins</h4>
+                                <p class="small-text">Helps you stay full and energized.</p>
+                                <ul>
+                                    <li>Chicken breast</li>
+                                    <li>Salmon</li>
+                                    <li>Tofu</li>
+                                    <li>Eggs</li>
+                                    <li>Beans & lentils</li>
+                                </ul>
                             </div>
                         </div>
+
+                        <!-- Vegetables -->
+                        <div class="col-md-4">
+                            <div class="simple-meal-card">
+                                <h4>Vegetables</h4>
+                                <p class="small-text">Add color, vitamins, and fiber.</p>
+                                <ul>
+                                    <li>Broccoli</li>
+                                    <li>Spinach</li>
+                                    <li>Carrots</li>
+                                    <li>Peppers</li>
+                                    <li>Zucchini</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Whole Grains -->
+                        <div class="col-md-4">
+                            <div class="simple-meal-card">
+                                <h4>Whole Grains</h4>
+                                <p class="small-text">Provides long-lasting energy.</p>
+                                <ul>
+                                    <li>Brown rice</li>
+                                    <li>Quinoa</li>
+                                    <li>Whole‑grain pasta</li>
+                                    <li>Oats</li>
+                                    <li>Whole‑grain bread</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
+
+
+
                 </div>
                 <div class="balanced-box p-4 mb-5">
-                    <h2>Healthy Swaps</h2>
-                    <p>Small changes make a big difference.</p>
+                <div class="carousel-wrapper">
+                    <div id="mealCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
 
-                    <div class="swap-grid mt-4">
-                        <div class="swap-card">
-                            <strong>Instead of:</strong> Fries
-                            <br><strong>Try:</strong> Oven‑baked potatoes
+                            <div class="carousel-item active">
+                                <img src="../img/greeksalad.jpeg" class="d-block w-100 rounded" alt="Meal 1">
+                                <div class="carousel-caption">
+                                    <h5>Mediterranean Plate</h5>
+                                    <p>Chicken • Couscous • Veggies • Olive Oil</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../img/quinoa.jpeg" class="d-block w-100 rounded" alt="Meal 2">
+                                <div class="carousel-caption">
+                                    <h5>Veggie Power Bowl</h5>
+                                    <p>Quinoa • Broccoli • Chickpeas • Tahini</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../img/pancake.jpeg" class="d-block w-100 rounded" alt="Meal 3">
+                                <div class="carousel-caption">
+                                    <h5>Balanced Breakfast</h5>
+                                    <p>Eggs • Fruit • Whole-Grain Pancakes</p>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="swap-card">
-                            <strong>Instead of:</strong> White bread
-                            <br><strong>Try:</strong> Whole‑grain bread
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mealCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
 
-                        <div class="swap-card">
-                            <strong>Instead of:</strong> Creamy sauces
-                            <br><strong>Try:</strong> Greek yogurt dressings
-                        </div>
-
-                        <div class="swap-card">
-                            <strong>Instead of:</strong> Soda
-                            <br><strong>Try:</strong> Infused water
-                        </div>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mealCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-      <aside class="tips-sidebar">
-        <h3>Quick Tips</h3>
-        <ul class="list-unstyled">
-          <li>🌈 Add color to every meal</li>
-          <li>🥚 Include protein each time</li>
-          <li>🥑 Choose healthy fats</li>
-          <li>💧 Drink water with meals</li>
-          <li>🍽️ Stop eating at 80% full</li>
-        </ul>
-      </aside>
-    </div>
+            
+            
 
+
+
+            <h2>Healthy Swaps</h2>
+            <p>Small changes make a big difference.</p>
+            <div class="accordion" id="swapAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#swap1">
+                            Fries → Oven-Baked Potatoes
+                        </button>
+                    </h2>
+                    <div id="swap1" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Crispy, lower-fat, and still delicious.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#swap2">
+                            White Bread → Whole-Grain Bread
+                        </button>
+                    </h2>
+                    <div id="swap2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            More fiber, more nutrients, better energy.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#swap2">
+                            Creamy sauces → Greek yogurt dressings
+                        </button>
+                    </h2>
+                    <div id="swap3" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            More creaminess, less fat, added protein.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#swap4">
+                            Soda → Infused water
+                        </button>
+                    </h2>
+                    <div id="swap4" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Hydrating, flavorful, and sugar-free.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3">
+                <aside class="tips-sidebar">
+                    <h3>Quick Tips</h3>
+                    <ul class="list-unstyled">
+                        <li>🌈 Add color to every meal</li>
+                        <li>🥚 Include protein each time</li>
+                        <li>🥑 Choose healthy fats</li>
+                        <li>💧 Drink water with meals</li>
+                        <li>🍽️ Stop eating at 80% full</li>
+                    </ul>
+                </aside>
+            </div>
         </div>
+
+
     </section>
-    
+
     <footer class="text-center p-3 mt-5 bg-primary text-white" data-bs-theme="dark">
         <p>Healthy Living Portal — Created by Angela</p>
         <small>“Small steps every day lead to big changes.”</small>
