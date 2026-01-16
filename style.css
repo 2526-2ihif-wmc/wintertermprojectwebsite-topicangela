@@ -1,6 +1,7 @@
-html{
+html {
   background-color: #78C2AD;
 }
+
 .custom-green {
   background-color: rgb(162, 255, 162);
 }
@@ -22,19 +23,21 @@ html{
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 body {
   background: linear-gradient(to bottom, #e8ffe8 0%, #ffffff 50%, #e8ffe8 100%);
 }
+
 .tips-sidebar {
-  background: #f6fff6;
+  background: linear-gradient(to bottom right, #ffffff, #eafff3);
   border: 1px solid #cceccc;
   border-radius: 12px;
-  padding: 15px 20px;
+  padding: 20px;
   position: sticky;
   top: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .tips-sidebar a {
@@ -50,15 +53,18 @@ body {
   transform: translateX(3px);
   text-shadow: 0 0 5px rgba(27, 94, 50, 0.3);
 }
+
 .btn:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-.carousel-img{
+
+.carousel-img {
   height: 35vh;
   object-fit: cover;
   border-radius: 15px;
 }
+
 .carousel-caption {
   position: static;
   background: #ffffffcc;
@@ -70,43 +76,42 @@ body {
 .card {
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.card-body{
+  position: relative;
 }
 
-.recipe-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.95);
-  padding: 15px;
-  overflow-y: auto;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.3s ease;
-}
-
-.card:hover .recipe-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.recipe-overlay h4 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
-.recipe-overlay ul,
-.recipe-overlay ol {
-  padding-left: 18px;
-  margin-bottom: 10px;
-}
-
-.recipe-overlay .cal {
-  font-weight: bold;
-  margin-top: 10px;
+.tips-sidebar h3 {
   color: #176b3f;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
+
+.tips-sidebar ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.tips-sidebar li {
+  margin-bottom: 8px;
+}
+
+.tips-sidebar a {
+  color: #176b3f;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.tips-sidebar a:hover {
+  color: #0b3d25;
+  transform: translateX(4px);
+}
+
 
 /* hydration html */
 .water-tracker .cup {
@@ -118,6 +123,7 @@ body {
   transition: transform 0.2s ease, background-color 0.3s ease;
   background-color: #ffffff;
 }
+
 .water-tracker .cup.filled {
   background-color: #a3d9ff;
 }
@@ -125,25 +131,30 @@ body {
 .water-tracker .cup:hover {
   transform: scale(1.08);
 }
+
 .intake-box {
   background-color: #e8fff1;
   border-left: 5px solid #78C2AD;
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .intake-box ul {
   list-style: none;
   padding-left: 0;
 }
+
 .intake-box li::before {
   content: "💧 ";
 }
+
 .food-card {
   background-color: #ffffff;
   border: 2px solid #78C2AD;
   transition: transform 0.2s ease;
   font-size: 1.2rem;
 }
+
 .food-card:hover {
   transform: scale(1.05);
 }
@@ -155,9 +166,10 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   margin-top: 30px;
 }
+
 .balanced-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
 .plate-grid {
@@ -188,6 +200,7 @@ body {
   height: 100%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .meal-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
@@ -204,21 +217,25 @@ body {
   padding-left: 18px;
   margin-bottom: 0;
 }
+
 .tips-sidebar:hover {
   box-shadow: 0 10px 25px rgba(120, 194, 173, 0.4);
   transform: translateY(-4px);
   transition: 0.3s ease;
 }
+
 .carousel-item img {
   height: 280px;
   object-fit: cover;
   width: 100%;
   border-radius: 12px;
 }
+
 .carousel-wrapper {
   max-width: 600px;
   margin: 0 auto;
 }
+
 .simple-meal-card {
   background: #ffffff;
   border: 2px solid #cceccc;
@@ -229,7 +246,7 @@ body {
 
 .simple-meal-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   border-color: #78C2AD;
 }
 
@@ -261,7 +278,7 @@ body {
 
 .portion-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   border-color: #78C2AD;
 }
 
@@ -303,7 +320,7 @@ body {
 
 .move-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
   border-color: #78C2AD;
 }
 
@@ -393,7 +410,7 @@ body {
 
 .time-block:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   border-color: #78C2AD;
 }
 
@@ -411,3 +428,5 @@ body {
     width: 100%;
   }
 }
+ 
+
